@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Covid-19 Stat</title>
+</head>
+<body>
+    
+
+    <header>
+        <div class="containe">
+             <div class="header-all">
+                <div class="left">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2785/2785819.png" alt="">
+                </div>
+                <div class="center">
+                    <h1>Covid-19 Statics</h1>
+                </div>
+                <div class="right">
+                    <a href="">About</a>
+                    <a href="critic.html">Critic</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="td">
+        <div class="input">
+            
+                <div class="gallery">
+                    <div class="txt containe">
+                        <p>Coronavirus disease (COVID-19) is an infectious  disease caused by the SARS-CoV-2 virus.
+
+                            Most people infected with the virus will experience  mild to moderate respiratory illness and recover without requiring special treatment. However, some will become seriously ill and require medical attention. Older people and those with underlying medical conditions like cardiovascular disease, diabetes, chronic respiratory disease, or cancer are more likely to develop serious illness. Anyone can get sick with COVID-19 and become seriously ill or die at any age. 
+                            
+                            The best way to prevent and slow down  transmission is to be well informed about the disease and how the virus spreads.</p>
+                    </div>
+                    <div class="img">
+                        <div class="bx">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/SARS-CoV-2_without_background.png/800px-SARS-CoV-2_without_background.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <input type="text" class="country" placeholder="Country Name" required>
+                <input onclick="GetData()" type="submit" class="data" value="Get Info">
+            
+            <div id="list" class="containe">
+                <div class="text">
+                    <div  data-aos="fade-up" class="box">
+                        <h3>Recovered</h3>
+                        <h2 id="recovered"></h2>
+                    </div>
+                    <div  data-aos="fade-up" class="box">
+                        <h3>Confirmed</h3>
+                        <h2 id="confirmed"></h2>
+                    </div>
+                    <div  data-aos="fade-up" class="box">
+                        <h3>Deaths</h3>
+                        <h2 id="deaths"></h2>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        
+        
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
