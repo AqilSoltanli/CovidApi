@@ -44,7 +44,7 @@
 
         })
         .catch(err => console.error(err));
-        
+        AOS.init();
 
 
 
